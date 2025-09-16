@@ -1,0 +1,174 @@
+/* Custom styles for Jollibee Merch Store */
+
+/* Global fluidity */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Jollibee Color Palette */
+.bg-red {
+  background-color: #D52B1E !important;
+}
+
+.bg-yellow {
+  background-color: #FFD700 !important;
+}
+
+.text-red {
+  color: #D52B1E !important;
+}
+
+.text-yellow {
+  color: #FFD700 !important;
+}
+
+.btn-red {
+  background-color: #D52B1E;
+  border-color: #D52B1E;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #B22222;
+  border-color: #B22222;
+  color: white;
+}
+
+.btn-yellow {
+  background-color: #FFD700;
+  border-color: #FFD700;
+  color: #D52B1E;
+}
+
+.btn-yellow:hover {
+  background-color: #FFC107;
+  border-color: #FFC107;
+  color: #D52B1E;
+}
+
+/* Hero section enhancements */
+#hero {
+  background: linear-gradient(rgba(213, 43, 30, 0.8), rgba(213, 43, 30, 0.8)), url('https://via.placeholder.com/1920x600?text=Jollibee+Joy') center/cover;
+  color: white;
+  padding: 150px 0;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+#hero .btn {
+  animation: fadeInUp 1.6s ease-out;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Product cards enhancements */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit:
+/* Section Padding Consistency */
+section {
+  padding-top: 4rem;    /* about 64px */
+  padding-bottom: 4rem; /* same */
+}
+
+/* For specific sections that you want less/more */
+#hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.bg-yellow, .bg-white {
+  /* optional: ensure backgrounds align well */
+}
+
+.text-red, .btn-red {
+  /* existing */
+}
+
+/* Product cards: tighten spacing between them */
+.card.product-card {
+  margin-bottom: 1.5rem; /* so space between rows */
+}
+
+/* If you have .row.g-4 everywhere, maybe reduce for tighter look */
+.row.g-4 {
+  gap: 1.5rem; /* reduce gap from default if needed */
+}
+
+/* Carousel images: ensure uniform height */
+#featuredCarousel .carousel-item img {
+  height: 400px; /* or whatever fixed height fits your layout */
+  object-fit: cover;
+}
+
+/* Improve readability of carousel captions */
+.carousel-caption h5 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.carousel-caption p {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+/* Adjust navbar margin for sections (so scroll anchors land nicely) */
+body {
+  scroll-padding-top: 70px; /* height of navbar */
+}
